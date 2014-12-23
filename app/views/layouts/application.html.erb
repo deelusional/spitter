@@ -26,12 +26,27 @@
 			<%= link_to 'About', '#' %>
 		</div>
 	</header>
-	<hr />   <!-- This is adding a horizontal rule underneat the header to separate it cleanly -->
+	<hr />   <!-- This is adding a horizontal rule underneath the header to separate it cleanly -->
 		     <!-- hr {clear:both;} had to be added to css page to clear out the bootstrap columns-->
 
 	<br class="clear" />
 
-<%= yield %>
+	<div class="container">
+	  <%= yield %>
+	</div>
+
+	<div class="footer">
+	  <div class="container">
+	    <div class="col-sx-6">
+	      <%= link_to "Make money money make!! $$$$$$$", "#", :class => 'next-quote' %>
+	    </div>
+	    
+	    <div class="col-xs-6 footer-blurb">
+	      <a href="http://www.urbandictionary.com/define.php?term=grindin">Keep Grindin'!</a><br />
+	    	This is my first Ruby on Rails app - 'Deelowstylez'
+	    </div>
+	  </div>
+	</div>
 
 </body>
 </html>
