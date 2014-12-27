@@ -7,16 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	
 	<header>
 		<div class="col-xs-3">
 		  <%= link_to root_path, :class => 'logo' do %>
 			<div class="circle">
   			  <br />
-  			  You know
+  			  Click here
   			  <br />
-  			  you need
+  			  for a 
   			  <br />
-  			  to code!
+  			  new quote!
 			</div>
 		  <% end %>
 		</div>
@@ -30,9 +31,9 @@
 	</header>
 	<hr />   <!-- This is adding a horizontal rule underneath the header to separate it cleanly -->
 		     <!-- hr {clear:both;} had to be added to css page to clear out the bootstrap columns-->
-
 	<br class="clear" />
 
+	
 	<div class="container">
 	  <% if flash[:error].present? %>
 	    <div class="col-xs-10 col-xs-offset-1 alert alert-danger">
@@ -42,6 +43,7 @@
 	  <%= yield %>
 	</div>
 
+	
 	<div class="footer">
 	  <div class="container">
 	    <div class="col-sx-6">
