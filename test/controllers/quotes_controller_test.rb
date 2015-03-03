@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class QuotesControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+   test "quote show page" do
+     assert true
+   end
 end
