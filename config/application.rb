@@ -25,6 +25,6 @@ module Spitter
 
     # Precompile additional assets
     config.assets.precompile += %w( .svg .eot. .woff2 .woff .ttf )
-
+    config.i18n.enforce_available_locales = false
   end
 end
